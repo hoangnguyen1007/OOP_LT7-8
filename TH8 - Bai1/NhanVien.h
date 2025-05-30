@@ -57,6 +57,7 @@ private:
 	static int so_NVVP;
 	static int so_NVSX;
 public:
+	~CongTy();
 	CongTy();
 	void Nhap();
 	void Xuat() const;

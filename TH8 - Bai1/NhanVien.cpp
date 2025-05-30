@@ -112,6 +112,14 @@ string nvSanXuat::getLoai() const
 }
 int CongTy::so_NVSX = 0;
 int CongTy::so_NVVP = 0;
+CongTy::~CongTy()
+{
+	for (int i = 0; i < sl; i++)
+	{
+		delete ct[i];
+	}
+	delete ct;
+}
 CongTy::CongTy() {};
 void CongTy::Nhap()
 {
