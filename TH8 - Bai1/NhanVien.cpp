@@ -189,6 +189,7 @@ NhanVien* CongTy::nvSX_luong_min()
 	{
 		if (ct[i]->getLuong() < minl && ct[i]->getLoai() == "San xuat")
 		{
+			minl = ct[i]->getLuong();
 			index = i;
 		}
 	}
@@ -203,6 +204,7 @@ NhanVien* CongTy::nvVP_tuoi_max()
 	{
 		if (2025 - ct[i]->getNgaySinh().getNam() > tMax && ct[i]->getLoai() == "Van phong")
 		{
+			tMax = 2025 - ct[i]->getNgaySinh().getNam();
 			index = i;
 		}
 	}
