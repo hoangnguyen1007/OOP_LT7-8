@@ -118,7 +118,7 @@ CongTy::~CongTy()
 	{
 		delete ct[i];
 	}
-	delete ct;
+	delete[] ct;
 }
 CongTy::CongTy() {};
 void CongTy::Nhap()
