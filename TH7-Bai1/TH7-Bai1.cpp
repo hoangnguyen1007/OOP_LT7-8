@@ -13,9 +13,15 @@ int main()
 	cout << "Nhap chuyen xe noi thanh thu hai: " << endl;
 	cin >> n2;
 	cout << "=====================================" << endl;
-	cout << ng1<<ng2;
+	cout << "---------------Chuyen xe ngoai thanh:------------------" << endl;
+	cout << ng1;
+	cout << "-------------------------------------------" << endl;
+	cout<< ng2;
 	cout << "-Tong doanh thu xe ngoai thanh: " << ChuyenXeNgoaiThanh::getDoanhThuNgoaiThanh() << endl;
-	cout << n1 <<n2<<endl;
+	cout << "---------------Chuyen xe noi thanh:------------------" << endl;
+	cout << n1;
+	cout << "-------------------------------------------" << endl;
+	cout << n2;
 	cout << "-Tong doanh thu xe noi thanh la: " << ChuyenXeNoiThanh::getDoanhThuNoiThanh() << endl;
 	cout << "-Tong doanh thu cac chuyen trong va ngoai thanh la: " << Chuyen_Xe::TongDoanhThu();
 }
